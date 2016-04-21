@@ -1,0 +1,232 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:oak="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <ViewSwitcher
+        android:id="@+id/viewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@anim/fadein"
+        android:outAnimation="@anim/fadeout">
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/splash_final" />
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/img2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/home_background_jpeg" />
+
+    </ViewSwitcher>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Svg.AnimatedSvgView
+            android:id="@+id/animated_svg_view"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_margin="0dp"
+            oak:oakSvgFillStart="1500"
+            oak:oakSvgFillTime="2000"
+            oak:oakSvgImageSizeX="570"
+            oak:oakSvgImageSizeY="570"
+            oak:oakSvgTraceTime="2000"
+            oak:oakSvgTraceTimePerGlyph="1000" />
+
+
+        <ImageView
+            android:id="@+id/wt_logo_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/base_subtitle_final" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/homeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/home_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/home_logo" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/root_viw_frame"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/twitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/twitter_seven" />
+
+                    <com.facebook.rebound.ui.SpringConfiguratorView
+                        android:id="@+id/spring_configurator"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:layout_gravity="bottom" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/root_viw_frame1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fb_seven" />
+
+                    <com.facebook.rebound.ui.SpringConfiguratorView
+                        android:id="@+id/spring_configurator1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/root_viw_frame2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/youtube"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/youtube_seven" />
+
+                    <com.facebook.rebound.ui.SpringConfiguratorView
+                        android:id="@+id/spring_configurator2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/root_viw_frame3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/google_plus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/google_plus_seven" />
+
+                    <com.facebook.rebound.ui.SpringConfiguratorView
+                        android:id="@+id/spring_configurator3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.andexert.library.RippleView
+                    android:id="@+id/ripple_about_btn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:rv_zoom = "true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="8dp"
+                    app:rv_rippleDuration = "100"
+                    app:rv_centered="false"
+                    app:rv_type = "simpleRipple"
+                    android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/aboutBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+
+                    android:background="@drawable/mybutton"
+                    android:gravity="center"
+                    android:text="About Us"
+                    android:textColor="#ffffff" />
+                </com.andexert.library.RippleView>
+                <com.andexert.library.RippleView
+                    android:id="@+id/ripple_contact_btn"
+
+                    app:rv_rippleDuration = "100"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:rv_zoom = "true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="8dp"
+                    app:rv_centered="false"
+                    app:rv_type = "simpleRipple"
+                    android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/contactUsBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/mybutton"
+                    android:gravity="center"
+                    android:text="Contact Us"
+                    android:textColor="@android:color/white" />
+                </com.andexert.library.RippleView>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

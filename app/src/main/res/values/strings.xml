@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Atmos</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_muzei">MuzeiActivity</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+
+    <string name="navigation_item_1">Item 1</string>
+
+    <string name="navigation_item_2">Item 2</string>
+
+    <string name="navigation_item_3">Item 3</string>
+
+    <string name="navigation_item_4">Item 4</string>
+
+    <string name="navigation_item_5">Item 5</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_third">ThirdActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_ken_burns_test">KenBurnsTest</string>
+    <string name="title_activity_transition_test">TransitionTest</string>
+    <string name="title_activity_activity_b">ActivityB</string>
+    <string name="title_activity_about_us">About_us</string>
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+
+
+    <string name="about_title">About Atmos</string>
+    <string name="about_body"><![CDATA[
+
+        ATMOS is a three-day-long technological extravaganza, a celebration of Science which highlights the most recent advances and the greatest technological achievements from around the world.<br><br>
+        Through the events we have lined up, we aim to inspire people to innovate, explore and learn. We wish to highlight that the true beauty of our world comes forth when it is viewed through the watching glass of Science.<br><br>
+        Also, to spice it up, we have a fiery array of contests lined up for you to compete in and showcase your mastery of your field of scientific or technological interest.<br><br>
+        So come join us in this exciting journey through the realms of scientific discovery and innovation. We hope it shall inspire you and instill in you a thirst for knowledge that will last you till the end of your days.<br><br>
+    ]]></string>
+    <string name="about_version_template">v%1$s</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

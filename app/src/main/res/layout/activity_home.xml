@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background_jpeg"
+    tools:context="bitsatmos.beta.org.atmos.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <com.andexert.library.RippleView
+            android:id="@+id/more1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            app:rv_zoom = "true"
+            android:layout_height="wrap_content"
+            app:rv_type = "simpleRipple"
+            app:rv_centered="false">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/mybutton"
+            android:text="About Us"
+            android:textColor="#ffffff" />
+
+        </com.andexert.library.RippleView>
+        <com.andexert.library.RippleView
+            android:id="@+id/more2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:rv_zoom = "true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            app:rv_centered="false"
+            app:rv_type = "simpleRipple"
+            android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="@drawable/mybutton"
+            android:text="Contact Us"
+            android:textColor="#ffffff" />
+
+        </com.andexert.library.RippleView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hvhgcg"
+        android:textColor="#ffffff"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:autoLink="phone"/>
+</FrameLayout>
+
+
